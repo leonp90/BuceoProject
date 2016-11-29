@@ -1,0 +1,56 @@
+body{
+	font-family: 'Abel', sans-serif;
+	height: 100vh;
+}
+.logoDiv{
+	background-color: #071423;
+	display: inline;
+	height: 100vh;
+	position: fixed;
+	z-index: 100;
+}
+.logoDiv img{
+	height: 85vh;
+	float: left;
+}
+section{
+	height: 100vh;
+}
+.textContainer{
+	height: 100%;
+	padding: 20vh 10vh 20vh 0;
+
+}
+.textTitle{
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20vh;
+    position: relative;
+    text-align: center;
+}
+.textTitle span{
+	margin: 10px;
+}
+.sectionMain{
+	margin-top: 10vh;
+}
+.sectionBody{
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+.footer{
+	background-color: #071423;
+	height: 5vh;
+}
+.logoHead{
+	width: 50%;
+	margin: auto;
+}
+nav{
+	height: 8vh;
+	background-color: #071423;
+}
+.datepicker table{
+	background-color: rgba(0, 0, 0, 0.9);
+}

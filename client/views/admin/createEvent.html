@@ -1,0 +1,48 @@
+<div class="container">
+  
+<form name="newEventform" ng-controller="newEventController as eventCtrl" ng-submit="eventCtrl.createEvent(newEvent)">
+  <div class="form-group">
+    <label for="activity">Actividad</label>
+    <input id="activityName" list="activity" ng-model="eventCtrl.event.activity" placeholder="Nombre evento" class="form-control"/>
+    <datalist id="activity">
+      <option value="Barracuda"></option>
+      <option value="Canons"></option>
+      <option value="Castell"></option>
+      <option value="El avión"></option>
+      <option value="El bosque"></option>
+      <option value="El negre"></option>
+      <option value="Las gemelas"></option>
+      <option value="Los reyes"></option>
+      <option value="El volcan"></option>
+    </datalist>
+  </div>
+  <div class="bootstrap-iso">
+    <div class="form-group">
+      <div class="form-group col-md-6">
+        <!-- Date input-->
+        <label for="date" class="control-label">Fecha</label>
+        <input id="date" ng-model="eventCtrl.event.date" placeholder="MM/DD/YYY" type="text" class="form-control"/>
+      </div>
+      <div class="form-group col-md-6">
+        <!-- Date input-->
+        <label for="hour" class="control-label">Hora</label>
+        <input id="date" ng-model="eventCtrl.event.time" placeholder="00:00" type="text" class="form-control"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="">Experiencia</label>
+      <input id="experience" type="text" ng-model="eventCtrl.event.experience" placeholder="Titulación mínima requerida" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="">Plazas</label>
+      <input id="experience" type="text" ng-model="eventCtrl.event.space" placeholder="Titulación mínima requerida" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="">Anotaciones</label>
+      <textarea ng-model="eventCtrl.event.notes" id="experience" placeholder="Titulación mínima requerida" class="form-control">
+      </textarea> 
+    </div>
+  </div>
+<button type="submit" value="Submit" class="btn btn-primary">CREAR</button>
+</form>
+</div>

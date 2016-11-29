@@ -1,0 +1,89 @@
+body{
+	font-family: 'Abhaya Libre', serif;
+	
+}
+main{
+	background-image: url('/images/bck.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+a:hover{
+	text-decoration: none;
+	color: inherit;
+}
+a:focus{
+	text-decoration: none;
+	color: inherit;
+	outline: none;	
+}
+.modal-content{
+	margin-top: 40vh;
+}
+.mainBody h1{
+	padding-right: 40px;
+	letter-spacing: 10px;
+}
+.mainBody h1 small{
+	display: block;
+	letter-spacing: 2px;
+	color: #ede6e6;
+	text-align: right;
+}
+.mainBody{
+	color: white;
+	margin: auto;
+	text-align: center;
+	width: 50%;
+	margin-top: 40vh;
+	text-shadow: 2px 2px #000000;
+}
+
+.modal-fullscreen {
+  background: white;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1170px;
+  }
+}

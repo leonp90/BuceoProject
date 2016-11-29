@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .col-md-4
+  .col-md-8
+    div
+      h1=title
+      div
+        div
+          each elem,index in events
+            div.col-md-9.list-group-item-heading=elem.activity
+              div
+                p.list-group-item-text='Experiencia requerida: '+elem.experience
+                p.list-group-item-text='Fecha: '+elem.date
+                p.list-group-item-text='Hora: '+elem.time
+            div.col-md-3
+              button.btn.btn-secondary(data-index=elem._id type='button') APUNTATE
