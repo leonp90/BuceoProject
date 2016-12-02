@@ -9,7 +9,7 @@ angular.module('myApp')
 				return $http.post("/api/events", newEvent);
 			}
 			function exit(){
-				return $http.redirect("www.google.com");
+				return $http.redirect('/');
 			}
 
 		return {
