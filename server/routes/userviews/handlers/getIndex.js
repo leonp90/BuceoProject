@@ -1,6 +1,7 @@
 function getIndex(req, res) {
 	let title = "Marenostrum";
-	res.render('index', {title})
+	let user = req.user;
+	res.render('index', {user, title})
 }
 
 module.exports = getIndex;

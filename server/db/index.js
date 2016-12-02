@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');
 const event = require('../models/event')
-const user = require('../models/user')
+const user = require('../models/account')
 
 mongoose.Promise = global.Promise;
 

@@ -3,10 +3,14 @@ const Event = mongoose.model('Event');
 
 
 function getReservas(req, res){
-	let title = "Marenostrum - Eventos";
-
+	let title = "Proximos eventos";
+	
 	Event.find({})
-		.then((events)=>res.render('events', {title, events}));
+		.then((events)=>res.render('events', {
+			title,
+			events,
+			isUserLoggued: res.locals.isUserLoggued
+		}));
 
 }
 

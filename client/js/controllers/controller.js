@@ -12,13 +12,16 @@ angular.module('myApp')
 
 		$scope.getEvents();
 	})
-	.controller('newEventController', function($scope){
-		console.log(this.event)
+	.controller('newEventController', function($scope, marenostrumService){
+		createdEvent = {};
 		this.createEvent = function() {
 			console.log(this.event)
-			// newEvent.event.push(this.event); 	
+			createdEvent = this.event;
+			// newEvent.event.push(this.event); 
+			console.log(createdEvent);
+			marenostrumService.postEvents(createdEvent)
+				
 		};
-		createdEvent = this.event;
-		console.log(createdEvent)
-			// marenostrumService.postEvents(createdEvent)
+		// createdEvent = this.event;
+		// console.log(createdEvent)
 	});

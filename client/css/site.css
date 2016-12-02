@@ -1,31 +1,27 @@
 body{
 	font-family: 'Abel', sans-serif;
 	height: 100vh;
+	background-color: black;
+	color: white;
 }
-.logoDiv{
-	background-color: #071423;
-	display: inline;
-	height: 100vh;
-	position: fixed;
-	z-index: 100;
+a{
+	color: white;
 }
-.logoDiv img{
-	height: 85vh;
-	float: left;
+.btn-default{
+	background-color: transparent;
+	color: white;
 }
-section{
-	height: 100vh;
+.btn-lg{
+	border-radius: 0px;
 }
 .textContainer{
 	height: 100%;
-	padding: 20vh 10vh 20vh 0;
-
 }
 .textTitle{
     width: auto;
     height: 100%;
     margin: 0 auto;
-    padding: 20vh;
+    padding: 7vh;
     position: relative;
     text-align: center;
 }
@@ -36,8 +32,7 @@ section{
 	margin-top: 10vh;
 }
 .sectionBody{
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
+
 }
 .footer{
 	background-color: #071423;
@@ -50,7 +45,11 @@ section{
 nav{
 	height: 8vh;
 	background-color: #071423;
+	color: white;
 }
-.datepicker table{
-	background-color: rgba(0, 0, 0, 0.9);
+.picsite{
+	max-width: 10em;
+}
+.modal-content, .modal-body, .modal-header{
+	background-color: black;
 }

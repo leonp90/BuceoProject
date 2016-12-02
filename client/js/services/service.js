@@ -4,8 +4,9 @@ angular.module('myApp')
 			function getEvents(){
 				return $http.get("/api/events");
 			}
-			function postEvents(){
-				return $http.post("/api/events");
+			function postEvents(createdEvent){
+				newEvent= JSON.stringify(createdEvent)
+				return $http.post("/api/events", newEvent);
 			}
 
 		return {

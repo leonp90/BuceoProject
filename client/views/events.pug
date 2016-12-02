@@ -1,17 +1,15 @@
 extends layout
 
 block content
-  .col-md-4
-  .col-md-8
-    div
-      h1=title
-      div
+  .col-md-12
+    h1=title
+  .col-md-12
         div
           each elem,index in events
-            div.col-md-9.list-group-item-heading=elem.activity
-              div
+            div.col-md-6.list-group-item-heading=elem.activity
+              div.col-md-5
                 p.list-group-item-text='Experiencia requerida: '+elem.experience
                 p.list-group-item-text='Fecha: '+elem.date
                 p.list-group-item-text='Hora: '+elem.time
-            div.col-md-3
-              button.btn.btn-secondary(data-index=elem._id type='button') APUNTATE
+              div.col-md-12
+                button.btn.btn-secondary(data-index=elem._id type='button') APUNTATE
