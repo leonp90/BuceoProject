@@ -8,10 +8,14 @@ angular.module('myApp')
 				newEvent= JSON.stringify(createdEvent)
 				return $http.post("/api/events", newEvent);
 			}
+			function exit(){
+				return $http.redirect("www.google.com");
+			}
 
 		return {
 			getEvents : getEvents,
-			postEvents : postEvents
+			postEvents : postEvents,
+			exit : exit
 		}
 
 	})

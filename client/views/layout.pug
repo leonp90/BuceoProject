@@ -13,8 +13,10 @@ html(lang='es')
 
 
 	body
-		include ./includes/navbar.pug
-
+		if !user
+			include ./includes/navbar.pug
+		else if	user
+			include ./includes/navbarAdmin.pug
 		block content
 		footer.footer.navbar-fixed-bottom
 			.container

@@ -9,9 +9,9 @@ const getAdmin = require('./handlers/getAdmin');
 
 
 // User routes
-router.get('/',								getIndex);
-router.get('/nosotros',						getNosotros);
-router.get('/reservas',						getReservas);
+router.get('/', getIndex);
+router.get('/nosotros', getNosotros);
+router.get('/reservas', getReservas);
 
 // Admin routes
 router.get('/admin*', /*adminAuth,*/ getAdmin);

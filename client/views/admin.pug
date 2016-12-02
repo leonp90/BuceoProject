@@ -9,16 +9,7 @@ html(ng-app='myApp')
 		link(rel='stylesheet', href='/css/main.css')
 		base(href='http://localhost:3000/admin')
 	body
-		nav.container-fluid.adminHead(role='navigation')
-			.container
-				a.navbar-brand(href='/') Marenostrum
-				ul.nav.navbar-nav.navbar-right
-					li
-						a(href='/admin/events') Eventos
-					li
-						a(href='/admin/users') Usuarios
-					li
-						a(href='/logout') Log Out
+		include ./includes/navbarAdmin.pug
 		.container
 			ng-view
 

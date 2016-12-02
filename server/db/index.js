@@ -1,12 +1,8 @@
-const mongoose= require('mongoose');
-const event = require('../models/event')
-const user = require('../models/account')
-
+const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-const dbURI= 'mongodb://localhost:27017/marenostrum'
 const db = mongoose.connection;
-
+const dbURI = process.env.URL_DB
 
 db.on('error', (err)=>{
 	console.log(`Mongoose connection error: ${err}`);
@@ -24,7 +20,5 @@ process.on('SIGINT', () => {
 });
 
 db.on('connected', () => console.log(`Mongoose default connection open to ${dbURI}`));
-
-
 
 module.exports = db;

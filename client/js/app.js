@@ -15,6 +15,9 @@ angular.module('myApp', ['ngRoute'])
 				templateUrl: 'views/admin/createEvent.html',
 				controller: 'newEventController'
 			})
+			.when('/logout', {
+				controller: 'exitController'
+			})
 			.otherwise({
     			redirectTo: '/admin'
 			});

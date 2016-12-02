@@ -21,7 +21,13 @@ angular.module('myApp')
 			console.log(createdEvent);
 			marenostrumService.postEvents(createdEvent)
 				
-		};
-		// createdEvent = this.event;
-		// console.log(createdEvent)
-	});
+		}
+	})
+
+	.controller('exitController', function($scope, marenostrumService){
+		$scope.exit = function(){
+			marenostrumService.exit()
+			
+		}
+		$scope.exit(); 
+	})
