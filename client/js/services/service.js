@@ -4,18 +4,18 @@ angular.module('myApp')
 			function getEvents(){
 				return $http.get("/api/events");
 			}
+			function getEvent(id){
+				return $http.get("/api/event/" + id)
+			}
 			function postEvents(createdEvent){
 				newEvent= JSON.stringify(createdEvent)
 				return $http.post("/api/events", newEvent);
 			}
-			function exit(){
-				return $http.redirect('/');
-			}
 
 		return {
 			getEvents : getEvents,
-			postEvents : postEvents,
-			exit : exit
+			getEvent : getEvent,
+			postEvents : postEvents
 		}
 
 	})

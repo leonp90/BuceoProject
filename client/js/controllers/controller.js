@@ -1,33 +1,29 @@
 angular.module('myApp')
-	.controller('homeController', function($scope, marenostrumService){
-		
-		$scope.getEvents = function(){
+.controller('homeController', function($scope, marenostrumService){
 
-				marenostrumService.getEvents()
-					.then (function(response){
-						$scope.events = response.data;
-					})
+	$scope.events = [];
+	$scope.getEvents = function(){
 
-		} 
-
-		$scope.getEvents();
-	})
-	.controller('newEventController', function($scope, marenostrumService){
-		createdEvent = {};
-		this.createEvent = function() {
-			console.log(this.event)
+		marenostrumService.getEvents()
+		.then (function(response){
+			$scope.events=response.data;
+		})
+	} 
+	$scope.getEvents();
+})
+.controller('newEventController', function($scope, marenostrumService){
+	let createdEvent = {};
+	this.createEvent = function() {
 			createdEvent = this.event;
-			// newEvent.event.push(this.event); 
-			console.log(createdEvent);
-			marenostrumService.postEvents(createdEvent)
-				
-		}
-	})
+			marenostrumService.postEvents(createdEvent);
 
-	.controller('exitController', function($scope, marenostrumService){
-		$scope.exit = function(){
-			marenostrumService.exit()
-			
-		}
-		$scope.exit(); 
-	})
+		};
+})
+.controller('eventController', function($scope, $routeParams, marenostrumService){
+	 	const id = $routeParams.id
+		marenostrumService.getEvent(id)
+		.then (function(response){
+			console.log(response.data)
+			$scope.event = response.data;
+		})
+})

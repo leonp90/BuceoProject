@@ -1,0 +1,29 @@
+doctype html
+html(ng-app='myApp')
+	head
+		meta(charset='utf-8')
+		title Marenostrum
+		link(href='https://fonts.googleapis.com/css?family=Abhaya+Libre', rel='stylesheet')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+		link(rel='stylesheet', href='static/css/reset.css')
+		link(rel='stylesheet', href='static/css/admin.css')
+		script(src='//code.jquery.com/jquery-3.1.1.min.js')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.js')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.css')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.print.css' media='print')
+
+		base(href='http://localhost:3000/admin')
+	body
+		include ./includes/navbarAdmin.pug
+		.container
+			ng-view
+
+		footer.footer.navbar-fixed-bottom
+			.container Marenostrum©2016
+		script(src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js')
+		script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js')
+		script(src='/static/js/app.js')
+		script(src='/static/js/controllers/controller.js')
+		script(src='/static/js/services/service.js')
+		script(src='/static/js/directives/calendar.directive.js')

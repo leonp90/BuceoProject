@@ -11,8 +11,9 @@ const routerAuthLocal = require('./routes/auth/local')
 const app = express();
 
 app.set('view engine', 'pug');
-app.set('views', (path.join(__dirname, '../client/views')));
-app.use( express.static( path.join(__dirname, '../client')));
+app.set('views', (path.join(__dirname, '../views')));
+app.use('/static', express.static( path.join(__dirname, '../client')));
+app.use('/static', express.static( path.join(__dirname, '../views')));
 
 app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded({ extended: false }) );
