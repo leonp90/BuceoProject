@@ -15,10 +15,7 @@
     "express": "^4.14.0",
     "express-session": "^1.14.2",
     "lodash": "^4.17.2",
-<<<<<<< HEAD
     "moment": "^2.17.1",
-=======
->>>>>>> 0bd2a599ec45655858168e4a7f22925eda2e7bf1
     "mongoose": "^4.7.0",
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
