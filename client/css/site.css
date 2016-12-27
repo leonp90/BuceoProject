@@ -1,0 +1,55 @@
+body{
+	font-family: 'Abel', sans-serif;
+	height: 100vh;
+	background-color: black;
+	color: white;
+}
+a{
+	color: white;
+}
+.btn-default{
+	background-color: transparent;
+	color: white;
+}
+.btn-lg{
+	border-radius: 0px;
+}
+.textContainer{
+	height: 100%;
+}
+.textTitle{
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+    padding: 7vh;
+    position: relative;
+    text-align: center;
+}
+.textTitle span{
+	margin: 10px;
+}
+.sectionMain{
+	margin-top: 10vh;
+}
+.sectionBody{
+
+}
+.footer{
+	background-color: #071423;
+	height: 5vh;
+}
+.logoHead{
+	width: 50%;
+	margin: auto;
+}
+nav{
+	height: 8vh;
+	background-color: #071423;
+	color: white;
+}
+.picsite{
+	max-width: 10em;
+}
+.modal-content, .modal-body, .modal-header{
+	background-color: black;
+}

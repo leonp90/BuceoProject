@@ -1,0 +1,35 @@
+nav.navbar(role='navigation')
+  .container
+    .logoDiv.col-md-6.nav.navbar-nav.navbar-left
+      a(href='/')
+        h1 MARENOSTRUM
+    .div.col-md-6
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href='/nosotros') NOSOTROS
+        li
+          a(href='/reservas') RESERVAS
+        li
+          button.btn.btn-default.btn-lg(type='button', data-toggle='modal', data-target='#myModal') LOG IN
+
+
+#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+        h4#myModalLabel.modal-title.fa.fa-sign-in Login:
+      .modal-body.jumbotron
+        form(action='/local/login', method='post')
+          .form-group
+            label Username
+            input.form-control(type='text', name='username')
+          .form-group
+            label Password
+            input.form-control(type='password', name='password')
+          .modal-footer
+          button.btn.btn-default.btn-lg(type='submit') Login
+          button.btn.btn-default.btn-lg(type='button', data-dismiss='modal') Close
+
+

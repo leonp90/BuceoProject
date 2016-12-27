@@ -1,0 +1,10 @@
+nav.container-fluid.adminHead(role='navigation')
+			.container
+				a.navbar-brand(href='/') Marenostrum
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='/admin/events') Eventos
+					li
+						a(href='/admin/users') Usuarios
+					li
+						a(ng-click='$root.exit()') Log Out
