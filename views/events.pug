@@ -7,12 +7,14 @@ block content
     .col-md-6
           ul
             each elem,index in events
-              li.col-md-12.list-group-item-heading=elem.title
-                  p.list-group-item-text='Experiencia requerida: '+elem.experience
-                  p.list-group-item-text='Fecha: '+elem.date
-                  p.list-group-item-text='Hora: '+elem.time
-                  div.col-md-12
-                  button.btn.btn-secondary(data-index=elem._id type='button') APUNTATE
+              li.col-md-9
+                  div.col-md-12.list-group-item-heading=elem.title
+                  div.col-md-6.list-group-item-text='Fecha: '+elem.date
+                  div.col-md-6.list-group-item-text='Hora: '+elem.time
+                  div.col-md-6.list-group-item-text='Experiencia requerida: '+elem.experience
+              .col-md-3
+                  button.col-md-12.btn.btn-primary(data-index=elem._id type='button') + INFO
+                  button.col-md-12.btn.btn-secondary(data-index=elem._id type='button') APUNTATE
     .col-md-6
       script(type='text/javascript').
         var events =!{JSON.stringify(events)}

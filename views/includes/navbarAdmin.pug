@@ -1,10 +1,15 @@
-nav.container-fluid.adminHead(role='navigation')
-			.container
-				a.navbar-brand(href='/') Marenostrum
-				ul.nav.navbar-nav.navbar-right
-					li
-						a(href='/admin/events') Eventos
-					li
-						a(href='/admin/users') Usuarios
-					li
-						a(ng-click='$root.exit()') Log Out
+.col-md-2.adminSide
+	.col-md-12
+		a.navbar-brand(href='/') Marenostrum
+	.col-md-12
+		div Events
+		div Users
+		div Blog
+		div Advertising
+.col-md-10.adminBar(role='navigation')
+	.container
+		ul.nav.navbar-nav.navbar-right
+			li
+				a(href='#') My Account
+			li
+				a(ng-click='$root.exit()') Log Out
