@@ -1,8 +1,24 @@
+.adminSide a{
+	color:white;
+}
+.adminSide a:hover{
+	text-decoration: none;
+	color: white;
+}
+.adminSide a:focus{
+	text-decoration: none;
+	color: white;
+}
 .adminSide{
 	background-color: #2A3F54;
 	height: 100vh;
 	color: white;
 	float: left;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.mainAdmin{
+	margin: 0 auto;
 }
 .adminBarSide{
 	position: fixed;
@@ -11,4 +27,28 @@
 }
 .adminBar{
 	background-color: #EDEDED;
+}
+.adminBar div{
+	background-color: #EDEDED;
+}
+.navbar-brand{
+	text-align: center;
+	font-size: 2vw;
+	margin-bottom: 100px;
+	border-bottom: 1px solid #EDEDED;
+}
+.sideNavBar{
+	text-align: center;
+	padding: 0;
+}
+.sideNavButton{
+	text-align: left;
+	padding: 10px;
+	border-radius: 2px;
+}
+.sideNavButton i{
+	padding: 10px;
+}
+.sideNavButton i:last-child{
+	float: right;
 }

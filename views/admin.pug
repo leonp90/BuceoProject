@@ -12,11 +12,13 @@ html(ng-app='myApp')
 		script(src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.js')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.css')
 		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.print.css' media='print')
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+
 
 		base(href='http://localhost:3000/admin')
 	body
 		include ./includes/navbarAdmin.pug
-		.col-md-8.container
+		.col-md-8.container.mainAdmin
 			ng-view
 
 		footer.footer.navbar-fixed-bottom

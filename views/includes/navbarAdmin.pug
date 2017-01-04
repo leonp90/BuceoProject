@@ -1,11 +1,27 @@
 .col-md-2.adminSide
-	.col-md-12
-		a.navbar-brand(href='/') Marenostrum
-	.col-md-12
-		div Events
-		div Users
-		div Blog
-		div Advertising
+	.col-md-12.navbar-brand
+		a(href='/') Marenostrum
+	.col-md-12.sideNavBar
+		a(href='/events')
+			.sideNavButton
+				i.fa.fa-calendar(aria-hidden='true')
+				| EVENTS
+				i.fa.fa-angle-double-right(aria-hidden='true')
+		a(href='/users')
+			.sideNavButton
+				i.fa.fa-user-circle(aria-hidden='true')
+				| USERS
+				i.fa.fa-angle-double-right(aria-hidden='true')
+		a(href='/blog')
+			.sideNavButton
+				i.fa.fa-comments(aria-hidden='true')
+				| BLOG
+				i.fa.fa-angle-double-right(aria-hidden='true')
+		a(href='/advertising')
+			.sideNavButton
+				i.fa.fa-credit-card( aria-hidden='true')
+				| ADVERTISING
+				i.fa.fa-angle-double-right(aria-hidden='true')
 .col-md-10.adminBar(role='navigation')
 	.container
 		ul.nav.navbar-nav.navbar-right
