@@ -1,15 +1,10 @@
 angular.module('myApp')
 .controller('homeController', function($scope, marenostrumService){
-
-	$scope.events = [];
-	$scope.getEvents = function(){
-
 		marenostrumService.getEvents()
 		.then (function(response){
-			$scope.events=response.data;
+			$scope.events=JSON.stringify(response.data);
+			console.log($scope.events)
 		})
-	} 
-	$scope.getEvents();
 })
 .controller('newEventController', function($scope, marenostrumService){
 	let createdEvent = {};

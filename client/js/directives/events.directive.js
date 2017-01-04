@@ -2,7 +2,6 @@ angular.module('myApp')
 	.directive('events', function () {
 		return {
 			strict: 'E',
-			template: 'event.html'
+			templateUrl: '/static/admin/event.html'
 			}
-		}
-	});
+		});

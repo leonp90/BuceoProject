@@ -1,17 +1,14 @@
-<div class="jumbotron">
-  <div class="container">
-    <div class="col-md-3"><h4>{{event.title}}</h4></div>
+  <div class="col-md-12">
+    <div class="col-md-2"><h4>{{event.title}}</h4></div>
     <div class="col-md-2">Fecha: {{event.start | date}}</div>
     <div class="col-md-2">Hora: {{event.time | date: "h:mma"}}</div>
     <div class="col-md-2">Experiencia: {{event.experience}}</div>
-    <div class="col-md-2">Plazas disponibles: {{event.space - event.users.length}}</div>
+    <div class="col-md-2">Plazas: {{event.space - event.users.length}}</div>
   </div>
   <hr>
-  <div class="container">
-    <div class="container">
-
+  <div class="col-md-12">
+    <div>
       <hr>
       <div>Comentarios: <p>{{event.notes}}</p></div>    
     </div>
   </div>
-</div>

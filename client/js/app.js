@@ -8,18 +8,6 @@ angular.module('myApp', ['ngRoute'])
 				templateUrl: '/static/admin/admin.html',
 				controller: 'homeController'
 			})
-			.when('/admin/newevent', {
-				templateUrl: '/static/admin/createEvent.html',
-				controller: 'newEventController'
-			})
-			.when('/admin/events', {
-				templateUrl: '/static/admin/createEvent.html',
-				controller: 'newEventController'
-			})
-			.when('/admin/event/:id', {
-				templateUrl: '/static/admin/event.html',
-				controller: 'eventController'
-			})
 			.otherwise({
     			redirectTo: '/admin'
 			});
