@@ -1,20 +1,34 @@
 extends layout
 
 block content
-  section
-      .container.sectionMain
-        .container.sectionBody.col-md-6
-          .col-md-12
-            .textTitle
-              h2 LA ESCUELA
-          .col-md-12
-            .textContainer
-              p
-                | Si eres buceador y te gustaría seguir aprendiendo, aumentar tu seguridad y capacidad en el medio subacuatico para poder afrontar retos más emocionantes, puedes continuar tu formación en nuestra escuela.
-              p
-                | En Marenostrun te damos la posibilidad de elegir entre dos de las organizaciones para la enseñanza de buceo más reconocidas del mundo (PADI y ACUC), podrás elegir la especialidad que más se ajuste a tu buceo y seguir progresando hasta ser profesional.
-        .container.sectionBody.col-md-6
-          img(class='col-md-12' src='/static/images/school.jpg', alt='')
-  footer.footer.navbar-fixed-bottom
-    .container
+  .headerTop
+    .headerNav
+      a.headerNav-link(href='/events') Reservas
+      a.headerNav-link(href='/login')
+        i.fa.fa-user-circle.icon(aria-hidden='true')
+  aside.headerSidebar
+    .headerLogo
+      img(src='static/images/logo.png')
+    .headerSocial
+      a.headerSocial-link
+        i.fa.fa-facebook.icon(aria-hidden='true')
+      a.headerSocial-link
+        i.fa.fa-instagram.icon(aria-hidden='true')
+      a.headerSocial-link
+        i.fa.fa-comments.icon(aria-hidden='true')
+  .col-md-12
+    .col-md-5
+      ul
+        li
+          |La escuela
+        li
+          |Inmersiones
+        li
+          |Reservas
+        li
+          |Contacto
+    .col-md-7
+      h3
+        |Marenostrum
       p
+        |Una forma de vivir la aventura, de entender la naturaleza de explorar otros confines, marenostrum es el proyecto de unos profesionales del buceo, que unidos por nuestra amistad y nuestro amor por el mar, creamos una escuela de buceo recreativo, donde nuestro principal objetivo es enseñar a bucear de una forma divertida y segura.

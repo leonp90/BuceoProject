@@ -3,7 +3,7 @@ angular.module('myApp')
 		marenostrumService.getEvents()
 		.then (function(response){
 			$scope.events=JSON.stringify(response.data);
-			console.log($scope.events)
+			console.log(response.data)
 		})
 })
 .controller('newEventController', function($scope, marenostrumService){

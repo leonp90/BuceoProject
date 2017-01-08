@@ -1,55 +1,67 @@
 body{
 	font-family: 'Abel', sans-serif;
 	height: 100vh;
-	background-color: black;
+	background-color: white;
+	color: black;
+}
+/*a{
 	color: white;
+	text-decoration: none;
+}*/
+.headerTop{
+	position: fixed;
+	right: 50px;
+    width: 300px;
+    height: 15%;
+    z-index: 100;
 }
-a{
-	color: white;
+.headerNav{
+	position: absolute;
+	right: 20px;
+	bottom: 30px;
+	border-bottom: 40px;
 }
-.btn-default{
-	background-color: transparent;
-	color: white;
+.headerNav-link{
+	display: inline-block;
+	position: relative;
+	width: 13px;
+	height: 13px;
+	padding: 6px;
+	margin-top: 10px;
 }
-.btn-lg{
-	border-radius: 0px;
+.headerSidebar{
+	z-index: 101;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 65px;
+	height: 100%;
+	background-color: #3D4B58;
 }
-.textContainer{
+.headerLogo{
+	padding: 10px;
+}
+.headerLogo img{
+	display: block;
+	width: 100%;
 	height: 100%;
 }
-.textTitle{
-    width: auto;
-    height: 100%;
-    margin: 0 auto;
-    padding: 7vh;
-    position: relative;
-    text-align: center;
+.headerSocial{
+	position: absolute;
+	left: 20px;
+	bottom: 30px;
+	border-bottom: 40px;
 }
-.textTitle span{
-	margin: 10px;
+.headerSocial-link{
+	display: block;
+	position: relative;
+	width: 13px;
+	height: 13px;
+	padding: 6px;
+	margin-top: 10px;
 }
-.sectionMain{
-	margin-top: 10vh;
-}
-.sectionBody{
-
-}
-.footer{
-	background-color: #071423;
-	height: 5vh;
-}
-.logoHead{
-	width: 50%;
-	margin: auto;
-}
-nav{
-	height: 8vh;
-	background-color: #071423;
-	color: white;
-}
-.picsite{
-	max-width: 10em;
-}
-.modal-content, .modal-body, .modal-header{
-	background-color: black;
+.icon{
+	display: block;
+	width: 100%;
+	height: 100%;
 }
