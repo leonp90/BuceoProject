@@ -6,12 +6,14 @@ html(lang='es')
 		script(src="static/lib/jquery.min.js")
 		script(src="static/lib/moment.min.js")
 		script(src='static/lib/fullcalendar.min.js')
-		link(href='https://fonts.googleapis.com/css?family=Abel', rel='stylesheet')
 		link(rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css") 
 		title index
+		link(rel='stylesheet', href='/static/css/reset.css')
 		link(rel='stylesheet', href='/static/css/site.css')
+		link(href='https://fonts.googleapis.com/css?family=Abel', rel='stylesheet')
 		script(src='static/js/calendarjs.js')
 
-
-	body
+include includes/navbar.pug
+body
+	.bodyContent
 		block content
