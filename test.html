@@ -36,3 +36,24 @@
 
 </body>
 </html>
+
+// for (var i = 0; i<A.length; i++){
+// 	var indexA = i;
+// 	var sumLeft = 0;
+// 	var sumRight = 0;
+// 	var equilibrium = -1;
+
+// 		for (var k = 0; k < )
+// }
+
+var sum = A.reduce(function(pv, cv) { return pv + cv; });
+  var sum_right;
+  var sum_left = 0;
+  
+  for(i = 0; i < A.length; i++) {
+    sum_right = sum - sum_left - A[i];
+    if (sum_left === sum_right) return i;
+    sum_left += A[i];
+  }
+  
+  return -1;

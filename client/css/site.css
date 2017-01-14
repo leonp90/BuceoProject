@@ -82,6 +82,8 @@ a{
     top: 25%;
     left: 12%;
     border-left: solid 1px white;
+    z-index: 101;
+    width: 55%;
 }
 .leftContent li{
 	padding: 15px;
@@ -94,4 +96,12 @@ a{
     height: 75%;
     background-color: #063058;
     color: white;
+}
+.activeContent{
+	font-size: 2.5em;
+	transition: 1.5s;
+}
+.nonActiveContent{
+	font-size: 100%;
+	transition: 1.5s;
 }

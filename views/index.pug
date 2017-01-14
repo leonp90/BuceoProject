@@ -2,8 +2,7 @@ extends layout
 block content
     .bodyLeft
       ul.leftContent
-        li
-          h1
+        li.activeContent
             |La escuela
         li
           |Inmersiones
@@ -17,3 +16,9 @@ block content
           |Marenostrum
         p
           |Una forma de vivir la aventura, de entender la naturaleza de explorar otros confines, marenostrum es el proyecto de unos profesionales del buceo, que unidos por nuestra amistad y nuestro amor por el mar, creamos una escuela de buceo recreativo, donde nuestro principal objetivo es enseñar a bucear de una forma divertida y segura.
+
+    script(type='text/javascript').
+      $('.leftContent li').on("click", function(){
+        $(this).siblings().removeClass("activeContent").addClass("nonActiveContent");
+        $(this).removeClass("nonActiveContent").addClass("activeContent");
+      });
