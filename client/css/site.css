@@ -4,6 +4,9 @@ body{
 	background-color: white;
 	color: black;
 }
+img{
+	max-width: 300px;
+}
 a{
 	color: white;
 	text-decoration: none;
@@ -87,9 +90,6 @@ a{
 }
 .leftContent li{
 	padding: 15px;
-	background-size: 200% 100%;
-    background-image: linear-gradient(to right, transparent 50%, #071423 50%);
-    transition: background-position 1s;
 }
 .leftContent li:hover::after: {
 	background-position: -100% 0;
@@ -100,13 +100,14 @@ a{
     width: 70%;
     top: 100px;
     height: 75%;
-    background-color: #063058;
+    background-image: url("../images/bck.jpg");
     color: white;
 }
 .rightContent{
 	position: relative;
-    top: 25%;
-    width: 50%;
+    top: 30%;
+    left: 25%;
+    width: 60%;
 }
 .activeContent{
 	font-size: 2.5em;
